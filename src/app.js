@@ -6,6 +6,7 @@ const request=require('request')
 const geocode=require('./utils/geocode.js')
 const forecast=require("./utils/forecast.js")
 
+const port=process.env.PORT || 3000
 
 //to change view directory name you need to include
 const partials=path.join(__dirname,"../templates/partials")
@@ -103,7 +104,7 @@ app.get("*",function(req,res){
 
 
 
-app.listen(3000,function(){
+app.listen(port,function(){
   console.log("Server is up on port 3000")
 })
 
