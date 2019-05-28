@@ -57,7 +57,7 @@ app.get('/weather',function(req,res){
         return res.send({error:error})
       }
       res.send({address:data.place,
-      forecast:"It is cuurently "+data1.temperature+"."+data1.summary,
+      forecast:"It is currently "+data1.temperature+" degree celsius."+data1.summary+" The high today is "+data1.th+" with a low of "+data1.tl+" There is "+data1.rain+"% chance of rain.",
       location:req.query.address
     })
 

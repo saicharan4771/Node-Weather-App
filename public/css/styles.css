@@ -39,6 +39,8 @@ header a {
 
 .portrait {
     width: 250px;
+    padding:20px;
+    align: center;
 }
 input {
     border: 1px solid #cccccc;

@@ -15,7 +15,11 @@ request({url:url,json:true},function(error,response){
   else{
     callback(undefined,{
       summary:response.body.daily.data[0].summary,
-      temperature:response.body.currently.temperature
+      temperature:response.body.currently.temperature,
+      th:response.body.daily.data[0].temperatureHigh,
+      tl:response.body.daily.data[0].temperatureLow,
+      rain:response.body.daily.data[0].precipProbability
+
     })
 }
 })
